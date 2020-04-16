@@ -1,0 +1,68 @@
+#1. Go to the following link and download the latest version of Visual Studio Code (VSCode) available for your system (32-bit) or (64-bit)
+
+URL: https://code.visualstudio.com/download
+
+2. Open VSCode:
+- Go to 'Manage' (Ctrl + ,)
+- Click on 'Open Settings (JSON)'
+- Paste the following in 'settings.json' file:
+{
+    "code-runner.runInTerminal": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": true,
+    "code-runner.executorMap": {
+        "typescript": "tsc"
+    },
+    "cSpell.ignoreWords":["deepjyoti"],
+    "editor.fontSize": 12,
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "files.autoSave": "off",
+    "files.autoSaveDelay": 5000,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0",
+    "python.jediEnabled": false,
+    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.colorCustomizations": {}
+}
+
+3. Go to Extensions (Ctrl + Shift + X), download and install the following extensions:
+- Auto Close Tag (0.5.6)
+- Auto Import (1.5.3)
+- Auto Rename Tag (0.1.1)
+- Babel JavaScript (0.0.27)
+- Code Runner (0.9.17)
+- Code Spell Checker (1.8.0)
+- Color Highlight (2.3.0)
+- Debugger for Java (0.25.1)
+- ESLint (2.1.3)
+- Java Dependency Viewer (0.9.0)
+- Java Extension Pack (0.9.0)
+- Java Imports Snippets (0.0.1)
+- Java Linter (1.3.1)
+- Java Test Runner (0.22.3)
+- JavaScript (ES6) Code Snippets (1.7.2)
+- Language Support for Java(TM) by Red Hat (0.59.1)
+- Live Server (5.6.1)
+- Markdown Preview Github Styling (0.1.6)
+- markdownlint (0.34.0)
+- Material Icon Theme (4.0.1)
+- Material Theme (32.5.0)
+- Material Theme Icon (1.1.4)
+- Maven for Java (0.21.2)
+- Paste and Indent (0.0.8)
+- Path Intellisense (1.4.2)
+- Prettier - Code formatter (4.4.0)
+- Python (2020.3.71659)
+- TSLint (1.2.3)
+- Visual Studio IntelliCode 1.2.6

@@ -1,0 +1,13 @@
+#1. Open the 'Command Prompt' and enter the following command to install TypeScript on your system.
+
+C:\Users\Deepjyoti.Barman>npm install -g typescript
+C:\Users\Deepjyoti.Barman\AppData\Roaming\npm\tsc -> C:\Users\Deepjyoti.Barman\AppData\Roaming\npm\node_modules\typescript\bin\tsc
+C:\Users\Deepjyoti.Barman\AppData\Roaming\npm\tsserver -> C:\Users\Deepjyoti.Barman\AppData\Roaming\npm\node_modules\typescript\bin\tsserver
++ typescript@3.8.3
+updated 1 package in 3.576s
+
+
+#2. Once after installation enter the following command to confirm installation:
+
+C:\Users\Deepjyoti.Barman>tsc -v
+Version 3.8.3
