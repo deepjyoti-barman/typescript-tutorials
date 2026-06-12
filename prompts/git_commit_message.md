@@ -73,7 +73,7 @@ Unable to analyze repository changes.
 
 ## Output Format
 
-Header: v<version> changes
+Header: v<previous-commit-version + 0.1> changes
 
 Message:
 <commit-type>: <one-line summary>
@@ -82,6 +82,8 @@ Message:
 - Modify: <important updates or improvements>
 - Delete: <removed functionality or files>
 - Refactor: <code restructuring if applicable>
+
+NOTE: If the previous-commit-version = 0.9, 1.9, 2.9... then previous then (previous-commit-version + 0.1) should make it 1.0, 2.0, 3.0... respectively
 
 ## Example Output
 
