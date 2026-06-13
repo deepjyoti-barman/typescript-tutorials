@@ -102,3 +102,5 @@ Message:
 Only include sections that contain changes.
 
 Generate only the final commit message. Do not provide explanations, analysis, markdown fences, or additional commentary.
+
+The output must be immediately copy-pasteable and ready for use as-is.
