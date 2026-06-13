@@ -232,3 +232,34 @@ const MAX_RETRY_COUNT = 3;
 - Use uppercase letters only.
 - Separate words using underscores (\_).
 - Use for values that should not change.
+
+## Enum Type
+
+Enum (= short for "enumeration") type is used to define a set of named constants where each constant has a unique value associated with it. It helps when a variable should only have one value from a known list.
+
+### Types of Enums
+
+1. Numeric enums
+2. String enums
+3. Heterogeneous enums (mix of numeric and string values)
+4. Const enums (a special kind of numeric enums that are inlined at compile time)
+
+### Important Rules of Enum
+
+- Use enums when you have a fixed set of related values.
+
+  ```typescript
+  // Good example:
+  enum Environment {
+    QA = "qa",
+    Stage = "stage",
+    Prod = "prod",
+  }
+  ```
+
+- Prefer string enums in automation projects. They are easier to read in logs, reports, screenshots, and errors.
+- Avoid numeric enums unless numbers have real meaning, like HTTP status codes.
+- Avoid mixed enums. They reduce readability.
+- Do not create enum for values that constantly change. Example: product names coming from API may not be good enum candidates.
+- Enums improve code maintainability. If value changes, you update it in one place.
+- Enums reduce typo mistakes. TypeScript will warn you if you use an invalid enum value.
