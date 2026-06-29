@@ -77,6 +77,6 @@ console.log(adminUser.role); // admin
 // ---------------------------------------------------------------------------------
 
 // Use-case 7: Function arguments
-const numbers = [10, 20, 30];
+let numbers = [10, 20, 30];
 
 console.log(Math.max(...numbers)); // 30
