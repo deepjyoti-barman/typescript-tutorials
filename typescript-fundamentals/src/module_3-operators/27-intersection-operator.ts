@@ -1,6 +1,9 @@
 // intersection type operator (&)
 // it combines multiple types into one type
 
+// Union | means OR
+// Intersection & means AND
+
 // Use-case 1: Combine two object types
 type User = {
   username: string;

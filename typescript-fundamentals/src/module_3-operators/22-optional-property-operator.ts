@@ -1,8 +1,11 @@
-// optional property operator (?:)
-// The optional property operator is used in TypeScript to indicate that a property of an object may or may not be present
+// optional property operator (?)
+// The optional property operator is used in TypeScript to indicate that a property (of an object) or parameter (of a function) may or may not be present
 // This is particularly useful when defining interfaces or types for objects where some properties are optional
 
-// Accessing optional property safely
+// NOTE: Optional property operator is ? and it is not ?:
+// NOTE: ?: is used in ternary operator or conditional types
+
+// Use-case 1: Optional property in an object type
 type Profile = {
   username: string;
   bio?: string; // not every profile has a bio
@@ -24,3 +27,34 @@ console.log(user1.bio!.length); // Runtime crash, its preferred not to use non-n
 
 // Accessing optional property with default value
 console.log(user1.bio ?? 'No bio available'); // "No bio available" — safe with nullish coalescing operator (??)
+
+// ---------------------------------------------------------------------------------
+
+// Use-case 2: Optional function parameter
+function login(username: string, password?: string): void {
+  console.log(username);
+
+  if (password) {
+    console.log('Password is provided');
+  } else {
+    console.log('Password is missing');
+  }
+}
+
+login('qa_user');
+login('qa_user', 'Password123');
+
+// ---------------------------------------------------------------------------------
+
+// Use-case 3: (QA) Optional property in API response
+type ApiResponse = {
+  status: number;
+  message?: string;
+};
+
+const response: ApiResponse = {
+  status: 200,
+};
+
+// message may or may not come from API
+console.log(response.message);
