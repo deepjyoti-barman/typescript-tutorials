@@ -15,4 +15,4 @@ function greetUser(): void {
   console.log('Hello TypeScript functions!');
 }
 
-greetUser(); // Output: Hello TypeScript functions!
+greetUser(); // Hello TypeScript functions!
