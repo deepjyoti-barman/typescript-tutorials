@@ -68,8 +68,8 @@ console.log('scores[1001]:', scores[1001]);
 // A readonly array is an array that cannot be modified after its creation
 // This provides immutability, which can help prevent accidental changes to the array's contents
 // However, it also means that any attempt to modify the array will result in a compile-time error or runtime error
-const readonlyUsernames: ReadonlyArray<string> = ['alice', 'john'];
-const readonlyScores: readonly number[] = [85, 90, 78];
+let readonlyUsernames: ReadonlyArray<string> = ['alice', 'john'];
+let readonlyScores: readonly number[] = [85, 90, 78];
 
 // readonlyUsernames.push('jane'); // CTE: Property 'push' does not exist on type 'readonly string[]'
 console.log('readonlyUsernames[1]:', readonlyUsernames[1]);

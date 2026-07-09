@@ -20,14 +20,14 @@ console.log('browsers[0]:', browsers[0]);
 // ---------------------------------------------------------------------------
 
 // Number array
-const statusCodes: number[] = [200, 201, 400, 404, 500];
+let statusCodes: number[] = [200, 201, 400, 404, 500];
 
 console.log('statusCodes[2]:', statusCodes[2]);
 
 // ---------------------------------------------------------------------------
 
 // Boolean array
-const testResults: boolean[] = [true, false, true];
+let testResults: boolean[] = [true, false, true];
 
 console.log('testResults[1]:', testResults[1]);
 
@@ -39,7 +39,7 @@ type User = {
   password: string;
 };
 
-const users: User[] = [
+let users: User[] = [
   { username: 'admin@example.com', password: 'Password123' },
   { username: 'user@example.com', password: 'Password123' },
 ];
